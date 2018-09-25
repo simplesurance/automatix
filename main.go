@@ -124,7 +124,7 @@ func updateVendorDeps(githubClt *github.Client, cfg *Config, repo *GitHubReposit
 	log.Infof("%s: vendor dependencies updated", name)
 
 	if repo.VendorLibs {
-		log.Infof("%s downloading dependencies into vendor directory", name)
+		log.Infof("%s: downloading dependencies into vendor directory", name)
 		err := mod.VendorDependencies()
 		if err != nil {
 			log.Errorf("%s: download vendor dependencies failed: %s", name, err)
