@@ -18,6 +18,9 @@ import (
 	"golang.org/x/oauth2"
 )
 
+// version contains the application version, is set during build
+var version = "unset"
+
 const (
 	homepage = "https://github.com/simplesurance/automatix"
 	toolName = "Automatix"
@@ -172,6 +175,7 @@ func updateVendorDeps(githubClt *github.Client, cfg *Config, repo *GitHubReposit
 
 func main() {
 	success := true
+	log.Infof("%s %s\n", toolName, version)
 
 	if !fs.IsFile(cfgPath) {
 		log.Infof("config file %q does not exist", cfgPath)

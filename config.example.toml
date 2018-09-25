@@ -13,7 +13,7 @@ RepoBaseDir = "/var/lib/automatix/repositories/"
   GoModPath = "go.mod"
 
   # if enabled libraries will be updated to newest minor or patch version, if false only to newest patch version.
-  MinorVersionUpdate = false
+  MinorVersionUpdate = true
   Owner = "simplesurance"
   Repository = "baur"
 
@@ -21,15 +21,15 @@ RepoBaseDir = "/var/lib/automatix/repositories/"
   VendorLibs = true
 
 [[Repositories]]
-  Branch = "develop"
+  Branch = "master"
 
   # path to go.mod file in repository
-  GoModPath = "go/code/go.mod"
+  GoModPath = "go.mod"
 
   # if enabled libraries will be updated to newest minor or patch version, if false only to newest patch version.
   MinorVersionUpdate = false
   Owner = "simplesurance"
-  Repository = "sisu"
+  Repository = "automatix"
 
   # download dependencies into vendor/ directory after update
   VendorLibs = true

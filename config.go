@@ -45,11 +45,11 @@ var ExampleConfig = Config{
 
 		&GitHubRepository{
 			Owner:              "simplesurance",
-			Repository:         "sisu",
-			Branch:             "develop",
+			Repository:         "automatix",
+			Branch:             "master",
 			VendorLibs:         true,
 			MinorVersionUpdate: false,
-			GoModPath:          "go/code/go.mod",
+			GoModPath:          "go.mod",
 		},
 	},
 }
