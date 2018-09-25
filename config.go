@@ -61,7 +61,7 @@ func (c *Config) String() string {
 	for i, repo := range c.Repositories {
 		res += repo.String()
 		if i+1 < len(c.Repositories) {
-			res += "--\n"
+			res += "\n--\n"
 		}
 	}
 
