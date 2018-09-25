@@ -1,0 +1,7 @@
+automatix
+config.toml
+
+# vim temp and swap files
+*~
+*.swp
+*.swo

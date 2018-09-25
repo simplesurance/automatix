@@ -1,0 +1,35 @@
+
+# github oauth token, if empty the token from the environment variable GITHUB_OAUTH_TOKEN is used
+GitHubToken = "1234567890"
+
+# set to 0 to run update only 1x
+PeriodicIntervalMin = 0
+RepoBaseDir = "/var/lib/automatix/repositories/"
+
+[[Repositories]]
+  Branch = "master"
+
+  # path to go.mod file in repository
+  GoModPath = "go.mod"
+
+  # if enabled libraries will be updated to newest minor or patch version, if false only to newest patch version.
+  MinorVersionUpdate = false
+  Owner = "simplesurance"
+  Repository = "baur"
+
+  # download dependencies into vendor/ directory after update
+  VendorLibs = true
+
+[[Repositories]]
+  Branch = "develop"
+
+  # path to go.mod file in repository
+  GoModPath = "go/code/go.mod"
+
+  # if enabled libraries will be updated to newest minor or patch version, if false only to newest patch version.
+  MinorVersionUpdate = false
+  Owner = "simplesurance"
+  Repository = "sisu"
+
+  # download dependencies into vendor/ directory after update
+  VendorLibs = true
