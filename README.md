@@ -43,3 +43,7 @@ interval.
     Ensure the `rep - Full control of private repositories` checkbox is checked.
   - If you updated your OAUTH key and used Automatix before, you have to delete
     the previously checked out repositories in `RepoBaseDir`.
+- The `git commit` step fails because my git user identity is not set
+  - See https://help.github.com/articles/setting-your-commit-email-address-in-git/
+    alternatively the environment variables `GIT_COMMITTER_EMAIL`,
+    `GIT_AUTHOR_EMAIL` and `GIT_AUTHOR_NAME` can be set.
