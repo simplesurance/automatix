@@ -29,7 +29,7 @@ const (
 	cfgExamplePath = "config.example.toml"
 
 	githubPRTitle = "Go Module Update by " + toolName
-	commitMsg     = "go: update vendor libraries\nUpdate was done by " + toolName + "(" + homepage + ")"
+	commitMsg     = "go: update vendor libraries\n\nUpdate was done by " + toolName + "(" + homepage + ")"
 )
 
 func prExists(clt *github.Client, owner, repository, title string) (bool, string, error) {
