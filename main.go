@@ -118,7 +118,7 @@ func updateVendorDeps(githubClt *github.Client, cfg *Config, repo *GitHubReposit
 
 	if !depsUpdated {
 		log.Infof("%s: vendor dependencies already uptodate", name)
-		return false
+		return true
 	}
 
 	log.Infof("%s: vendor dependencies updated", name)
